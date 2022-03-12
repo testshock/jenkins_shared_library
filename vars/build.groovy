@@ -1,5 +1,3 @@
-def call(Map config) {
-    node {
-        echo "test"
-    }
+def call(Map config=[:]) {
+    sh 'echo ${config.name}'
 }
