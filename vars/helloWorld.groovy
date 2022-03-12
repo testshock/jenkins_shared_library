@@ -1,3 +1,3 @@
-def call(Map config=[:]) {
-    sh 'echo ${config}'
+def call(String name) {
+    sh 'echo ${name}'
 }
