@@ -10,6 +10,7 @@ def call(Map config = [:]) {
         //git branch: br, credentialsId: 'github-testshock-cmd', url: 'https://github.com/testshock/'+config.project
     } else {
 //        checkout scm: [$class: 'GitSCM', userRemoteConfigs: [[url: 'https://github.com/testshock/'+config.project, credentialsId: 'github-testshock-cmd' ]], branches: [[name: '${config.gittag}']]], poll: false
-        sh "echo tag:${config.gittag}|
+        //sh "echo tag:${config.gittag}"
+        sh "echo gittag here"
     }
 }
